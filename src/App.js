@@ -1,14 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 import { HashRouter as Router, Route, NavLink } from "react-router-dom";
 import SignUpForm from "./pages/SignUpForm";
 import SignInForm from "./pages/SignInForm";
 
 import "./App.css";
 
-class App extends Component {
-  render() {
-    return (
-      <Router basename="/react-auth-ui/">
+function App () {
+  return (
+    <Router basename="/react-auth-ui/">
         <div className="App">
           <div className="appAside" />
           <div className="appForm">
@@ -54,8 +53,7 @@ class App extends Component {
           </div>
         </div>
       </Router>
-    );
-  }
+  );
 }
 
 export default App;
